@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Calibri, sans-serif;
+    background-image: url("../assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(20px, 5vw, 100px);
+
+    padding: 20px 50px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+
+    background: rgba(0, 0, 0, 0.3);
+    width: min(90vw, 600px);
+}
+
+button {
+    color: white;
+    font-size: clamp(40px, 8vw, 100px);
+
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 10px 30px;
+
+    background: transparent;
+    cursor: pointer;
+}
+
+.counter {
+    color: white;
+    font-size: clamp(40px, 8vw, 100px);
+}
