@@ -1,6 +1,7 @@
 const plusBtn = document.querySelector("#plus-btn")
 const minusBtn = document.querySelector("#minus-btn")
 const valueParameter = document.querySelector("#counter")
+const resetBtn = document.querySelector("#reset-btn")
 
 let counter = 0
 
@@ -10,6 +11,15 @@ plusBtn.addEventListener('click', () => {
 })
 
 minusBtn.addEventListener('click', () => {
-    counter--
+    if (counter === 0) {
+        alert("Нельзя отнимать меньше нуля")
+    } else {
+        counter--
+        valueParameter.textContent = counter
+    }
+})
+
+resetBtn.addEventListener('click', () => {
+    counter = 0
     valueParameter.textContent = counter
 })
